@@ -1,4 +1,0 @@
-repository "myNew2dProject@DemiGodDevs@cloud"
-  path "/"
-    br "/main"
-    co "/main"
