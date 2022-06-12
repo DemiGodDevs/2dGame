@@ -29,15 +29,8 @@ public class PlayerMovement : MonoBehaviour
         {
             jump();
             midAir = true;
-
-          
         }
-        //if (midAir == true)
-        //{
-        //    jump();
-        //    midAir = false;
 
-        //}
         if (m_Rigidbody2D.velocity.y == 0)
         {
             midAir = false;
