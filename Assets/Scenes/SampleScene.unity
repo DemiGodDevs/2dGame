@@ -516,11 +516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b989f3cec7ae814489df90182c10d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  playerObject: {fileID: 0}
-  m_Rigidbody2D: {fileID: 0}
-  gameOverCanvas: {fileID: 0}
-  gameCanvas: {fileID: 0}
 --- !u!1 &150545773
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +674,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1637764, y: 1}
+    m_SensorSize: {x: 2.1213872, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -696,7 +691,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389501291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: 4.5099945, z: -10}
+  m_LocalPosition: {x: -7.4, y: 4.5099945, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -913,7 +908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: 4.5099945, z: -10}
+  m_LocalPosition: {x: -7.4, y: 4.5099945, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1339,22 +1334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7833844063ad8e41b9409c8fd92673d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 20
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.09
-  m_AirControl: 1
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 2147483647
-  m_GroundCheck: {fileID: 1005797596}
-  m_CeilingCheck: {fileID: 721437965}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!212 &1015568517
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1415,7 +1394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015568514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.52, y: 4.5099945, z: 0}
+  m_LocalPosition: {x: -7.4, y: 4.5099945, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1529,10 +1508,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1015568514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b989f3cec7ae814489df90182c10d1c, type: 3}
+  m_Script: {fileID: 11500000, guid: cc3ff64f6156e3f45bdcadf41bb74825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1015568516}
   playerObject: {fileID: 1015568514}
   m_Rigidbody2D: {fileID: 1015568515}
   gameOverCanvas: {fileID: 1294297956}

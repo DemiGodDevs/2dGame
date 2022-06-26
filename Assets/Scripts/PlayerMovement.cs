@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController2D controller;
     public GameObject playerObject; 
     float horizontalMove = 0f;
     float _speed = 8f;
@@ -23,8 +22,10 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        if (playerObject != null)
+        if (playerObject != null) {
+            if(Input.GetKey(KeyCode.W))
             playerObject.transform.Translate(Vector3.right * Time.deltaTime * _speed);
+        }
         if (_jump && !midAir)
         {
             jump();
@@ -50,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     void jump(){
-          m_Rigidbody2D.velocity = Vector3.up * controller.m_JumpForce;
+          m_Rigidbody2D.velocity = Vector3.up * 25f;
           _jump = false;
           canDoubleJump = false;  
     }
